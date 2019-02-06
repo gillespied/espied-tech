@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'espied(dot)tech',
-    description: 'Portfolio of David Gillespie, freelance data-science and web-developer in Nottingham.',
+    description:
+      'Portfolio of David Gillespie, freelance data-science and web-developer in Nottingham.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -14,12 +15,12 @@ module.exports = {
         name: 'uploads',
       },
     },
-    {
+    /*     {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
       },
-    },
+    }, */
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -59,8 +60,8 @@ module.exports = {
             resolve: 'gatsby-remark-copy-linked-files',
             options: {
               destinationDir: 'static',
-            }
-          }
+            },
+          },
         ],
       },
     },
@@ -71,12 +72,12 @@ module.exports = {
       },
     },
     {
-      resolve:'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
+      resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
       options: {
-        develop: true,            // Activates purging in npm run develop
+        develop: true, // Activates purging in npm run develop
         purgeOnly: ['/all.sass'], // applies purging only on the bulma css file
       },
     }, // must be after other CSS plugins
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
-}
+};
