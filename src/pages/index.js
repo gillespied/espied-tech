@@ -1,37 +1,41 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Layout from '../components/Layout'
+import React from "react";
+import PropTypes from "prop-types";
+import Layout from "../components/Layout";
+import { Link } from "gatsby";
 
 export default class IndexPage extends React.Component {
   render() {
-
     return (
       <Layout>
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h1 className="has-text-weight-bold is-size-1 has-text-centered">Hello</h1>
-               <p>My name is David. I'm a freelance data-science and web developer working in Nottingham.</p>
-
-              <p>Most companies are now generating more data than they know what to so with. If you are one of those companies, get in touch to discuss how to turn data into actionable information.</p>
+        <section className="hero is-link is-fullheight-with-navbar has-background-primary">
+          <div className="hero-body">
+            <div className="container">
+              <p className="title">
+                Freelance Data Science and Web Development
+              </p>
+              <p className="subtitle">
+                espied(dot)tech is me, David Gillespie I am an experienced data
+                science developer based in Nottingham. Available for both
+                freelance or contract work.
+              </p>
+              <p className="subtitle">
+                To discuss how I could help make sense of your data get in touch
+                either with{" "}
+                <Link style={{ textDecoration: "underline" }} to="./contact/">
+                  the contact form
+                </Link>{" "}
+                or{" "}
+                <Link
+                  style={{ textDecoration: "underline" }}
+                  to="https://www.linkedin.com/in/davidjgillespie/"
+                >
+                  add me on linkedin.
+                </Link>
+              </p>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
       </Layout>
-    )
+    );
   }
 }
-
-IndexPage.propTypes = {
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array,
-    }),
-  }),
-}
-
-
