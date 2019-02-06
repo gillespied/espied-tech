@@ -14,7 +14,7 @@ export default class IndexPage extends React.Component {
             <div className="section">
               <h1 className="has-text-weight-bold is-size-1 has-text-centered">Hello</h1>
                <p>My name is David. I'm a freelance data-science and web developer working in Nottingham.</p>
-               
+
               <p>Most companies are now generating more data than they know what to so with. If you are one of those companies, get in touch to discuss how to turn data into actionable information.</p>
             </div>
           </div>
