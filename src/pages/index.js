@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import Layout from '../components/Layout';
 
-const IndexPage = () => {
+const IndexPage = () => (
   <Layout>
     <section className="hero is-link is-fullheight-with-navbar has-background-primary">
       <div className="hero-body">
         <div className="container">
-          <p className="title">Freelance Data Science and Web Development</p>
+          <p className="title">Data Science and Web Development</p>
           <p className="subtitle">
             espied.tech is the home page for me, David Gillespie. I offer data science development
             on a freelance or contract basis. I'm based in Nottingham, but also available for remote
@@ -33,5 +33,7 @@ const IndexPage = () => {
         </div>
       </div>
     </section>
-  </Layout>;
-};
+  </Layout>
+);
+
+export default IndexPage;
