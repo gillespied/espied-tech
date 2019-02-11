@@ -1,5 +1,5 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d8df2fd2-25e7-46d5-ab75-250b24ff397f/deploy-status)](https://app.netlify.com/sites/kind-edison-08a3ff/deploys)
-# espied(dot).tech
+# espied(dot)tech
 
 A portfolio site for me, David Gillespie. Built with netlify, netlify-cms and gatsby.
 
